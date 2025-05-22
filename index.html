@@ -2,6 +2,101 @@
 <html>
 <head>
   <title> My Personal Webpage</title>
+<style>
+  body {
+    background-color: powderblue;
+    font-family:Arial;
+    color: black;
+    text-align: center;
+}
+
+   header {
+     background-color: tomato;
+     color: white;
+     text-align: center;
+     padding: 20px;
+ }
+
+h1{
+  color: navy;
+  font-size:36px;
+}
+
+p {
+  font-size: 18px;
+}
+
+img {
+ width: 200px;
+ height: 125px;
+ border-radius: 50%;
+ border: 10px solid green;
+ margin-top: 10px;
+}
+.table-style1 {
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid navy;
+}
+ .table-stye1 th, .table-style1 td {
+    border: 1px solid navy;
+    padding: 10px;
+    text-align: center;
+}
+  .table-style1 th {
+     background-color: lightblue;
+}
+.table-style2 {
+     width: 60%;
+     margin: 20px auto;
+     border-collapse: collapse;
+     border: 2px solid darkgreen;
+}
+
+.table-style2 th,.table-style2 td {
+ border: 1px solid darkgreen;
+ padding: 10px;
+ text-align: center;
+}
+
+.table-style2 th {
+   background-color: lightgreen;
+}
+.about{
+   width: 60%;
+   margin: 20px auto;
+   text-align: left;
+}
+div.mycontainer {
+    width: 66%;
+    overflow:auto;
+}
+div.mycontainer div {
+    width: 50%;
+    float: left;
+}
+
+.video {
+   width: 35%;
+   margin: 10px auto;
+   text-align: center;
+   border: 3px solid green;
+}
+.list-style1 {
+	list-style-type: square;
+	color: darkblue;
+        text-align: left;
+        margin: 20px;
+}
+.list-style2 {
+	list-style-type: circle;
+	color: darkgreen;
+        text-align: left;
+        margin: 20px;
+}
+
+</style>
+
 </head>
 <body>
 <header>
@@ -13,40 +108,20 @@
     Location: Kansas City
   </pre>
 </header>
-  <section>
+
+  <section class="about">
     <p>Check out my favorite website:
     <a href="https://www.google.com/"target="_blank">Google</a></p>
     <a href="hfzaidi123@gmail.com"target="_blank">hfzaidi123@gmail.com</a>
     <a href="https://https://www.nationalgeographic.com/photography/article/141029-national-cat-day-pets-kittens-nation-world" target=_blank">
-    <img src="https://github.com/hfz-321/surprise/blob/main/images.jpg?raw=true" alt="Cat Picture"></a>a>
-</section>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-  <title> My Personal Webpage</title>
-</head>
-<body>
-<header>
-  <h1>Welome to My Personal Webpage</h1>
-  <p> This is a simple example of an TML and CSS personal webpage.</p>
-  <pre>
-    Name: Hamida Zaidi
-    Age:?
-    Location: Kansas City
-  </pre>
-</header>
-  <section>
-    <p>Check out my favorite website:
-    <a href="https://www.google.com/"target="_blank">Google</a></p>
-    <a href="hfzaidi123@gmail.com"target="_blank">hfzaidi123@gmail.com</a>
-    <a href="https://https://www.nationalgeographic.com/photography/article/141029-national-cat-day-pets-kittens-nation-world" target=_blank">
-    <img src="https://github.com/hfz-321/surprise/blob/main/images.jpg?raw=true" alt="Cat Picture"></a>a>
+    <img src="https://github.com/hfz-321/surprise/blob/main/images.jpg?raw=true" alt="Cat Picture" title= "more cats"></a>a>
+
 </section>
 <hr>
 <hr2> My Hobbies</h2>
-<table>
+  <table class="table-style1">
+   
+ 
 <tr>
 <th>Hobby</th>
 <th>Hours/Week</th>
@@ -61,7 +136,8 @@
 </tr>
 </table>
 <hr>My Favorite Hobbies</h2>
-<table>
+<table class="table-style2">
+
 <tr>
 <th>Hobby</th>
 <th>Hours/Week</th>
@@ -75,28 +151,34 @@
 <td>Pants</td>
 </tr>
 </table>
+<div class= "mycontainer">
+<div>
 <h2>My Favorite Foods</h2>
-<ul>
+<ul class= "list-style1">
 <li>Food One</li>
 <li>Food Two</li>
 <li>Food Three</li>
 </ul>
-
+</div>
+<div>
 <h2>MyFavorite Drinks</h2>
-<ul>
+
+<ul class="list-style2">
 <li>Drink 1</li>
 <li>Drink 2</li>
 <li>Drink 3</li>
 </ul>
+</div>
+</div>
 
-<section>
+<section class= "video">
 <h2>My Favorite Video</h2>
 
 <video width="250" height="260" controls>
 <source src="https://live.staticflickr.com/video/5138745769/043d2205a7/700.mp4?s=eyJpIjo1MTM4NzQ1NzY5LCJlIjoxNzQ3NzU5NzkxLCJzIjoiNDI4ZjZlZDUxNDNlNGU0M2U5YjQ0M2U1Yzk3ZjQ3NTU1YTE3ZjFlYyIsInYiOjF9">
 Your browser does not support the video tag.
 </video>
-<section>
+</section>
 
 <h2>Embedded Website</h2>
 <iframe src="https://www.npr.com/" width="600" height="400" style="border:none;"></iframe>
@@ -115,5 +197,3 @@ Your browser does not support the video tag.
 
 </body>
 </html>
-
-
